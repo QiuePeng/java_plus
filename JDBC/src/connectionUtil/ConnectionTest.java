@@ -27,7 +27,7 @@ public class ConnectionTest {
 			ResultSet rs = stmt.executeQuery(sql);
 			
 			while (rs.next()) {
-			System.out.println(rs.getString(sql));
+			System.out.println(rs.getString(2));
 			}
 		}
 		catch(SQLException e) {

@@ -9,7 +9,7 @@ import java.util.Iterator;
 public class RegDriver2 {
 
 	public static void main(String[] args) {
-//		System.setProperty("jdbc.drivers","com.microsoft.sqlserver." +"jdbc.SQLServerDriver");
+//用Map (key,value): System.setProperty("jdbc.drivers","com.microsoft.sqlserver." +"jdbc.SQLServerDriver");
 		
 /* DirverManager.registerDriver*/		
 		try {
@@ -24,5 +24,6 @@ public class RegDriver2 {
 		Iterator<Driver> driIter = drivers.asIterator();// 轉換成迭帶器
 		driIter.forEachRemaining(System.out::println); 
 	}
+	
 
 }
